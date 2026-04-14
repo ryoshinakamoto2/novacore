@@ -13,6 +13,8 @@
         .gradient-text { background: linear-gradient(90deg, #a855f7, #ec4899); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         .manifesto-card { border-left: 1px solid rgba(168, 85, 247, 0.3); padding-left: 24px; transition: all 0.3s ease; }
         .manifesto-card:hover { border-left: 3px solid #a855f7; background: rgba(168, 85, 247, 0.02); }
+        .locked-card { background: rgba(139, 92, 246, 0.05); border: 1px solid rgba(139, 92, 246, 0.2); transition: all 0.3s ease; }
+        .locked-card:hover { border-color: #a855f7; transform: translateY(-5px); }
     </style>
 </head>
 <body class="p-4 md:p-8">
@@ -40,35 +42,52 @@
     <section class="max-w-5xl mx-auto mb-32">
         <div class="glass p-8 md:p-16 rounded-[50px] border-white/5 relative overflow-hidden">
             <div class="absolute top-0 right-0 p-10 opacity-5 text-8xl font-black tracking-tighter">RYOSHI</div>
-            
             <h3 class="text-4xl font-bold mb-12 gradient-text">The Nova Core Manifesto</h3>
-            
             <div class="space-y-12 text-gray-300">
                 <div class="manifesto-card">
                     <h4 class="text-white font-bold text-xl mb-3">1. Mathematics is the Only Truth</h4>
                     <p class="leading-relaxed font-light">While banks print infinite paper, we print finite code. Our supply is hard-capped at 21,000,000 NOVA. No more can ever be created. Scarcity is our core foundation.</p>
                 </div>
-
                 <div class="manifesto-card">
                     <h4 class="text-white font-bold text-xl mb-3">2. Safer than a Bank</h4>
-                    <p class="leading-relaxed font-light">Banks control your life. We give you back the keys. Ownership is renounced. The contract is immutable. Your assets cannot be frozen, seized, or manipulated. What you hold is truly yours.</p>
+                    <p class="leading-relaxed font-light">Banks control your life. We give you back the keys. Ownership is renounced. The contract is immutable. Your assets cannot be frozen, seized, or manipulated.</p>
                 </div>
-
                 <div class="manifesto-card">
                     <h4 class="text-white font-bold text-xl mb-3">3. No Owners, No Taxes</h4>
-                    <p class="leading-relaxed font-light">We believe in pure decentralization. 0% Buy Tax. 0% Sell Tax. No developer fees hidden in the shadows. A system for the people should not tax the people.</p>
-                </div>
-
-                <div class="manifesto-card">
-                    <h4 class="text-white font-bold text-xl mb-3">4. Bitcoin’s Spirit, Solana’s Speed</h4>
-                    <p class="leading-relaxed font-light">Bitcoin is the anchor; Nova Core is the sail. We take the 21M supply philosophy and power it with Solana’s lightning-fast network. Instant global payments with zero friction.</p>
-                </div>
-
-                <div class="manifesto-card">
-                    <h4 class="text-white font-bold text-xl mb-3">5. The Final Act</h4>
-                    <p class="leading-relaxed font-light">Ryoshi plants the seed and disappears. We created the tool, but the community builds the future. No central leader, no central failure.</p>
+                    <p class="leading-relaxed font-light">We believe in pure decentralization. 0% Buy Tax. 0% Sell Tax. No developer fees hidden in the shadows.</p>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section class="max-w-4xl mx-auto mb-32 px-4">
+        <div class="glass p-8 md:p-12 rounded-[40px] border-purple-500/20 text-center relative">
+            <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-purple-600 px-6 py-1 rounded-full text-[10px] font-bold tracking-[0.2em] uppercase">Security Protocol</div>
+            <h3 class="text-3xl font-bold mb-6 gradient-text">🛡️ Kurucu Hazinesi Mühürlendi</h3>
+            <p class="text-gray-300 text-lg mb-10 font-light leading-relaxed">
+                Nova Core ekosisteminin sürdürülebilirliği için toplam arzın <b>1.000.000 adet NOVA</b>'sı kurucu cüzdanına tanımlanmış ve akıllı kontrat ile <b>6 ay (180 gün) boyunca mühürlenmiştir.</b>
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="locked-card p-6 rounded-2xl">
+                    <span class="block text-purple-400 text-[10px] uppercase tracking-widest mb-2 font-mono">Miktar</span>
+                    <span class="text-2xl font-bold">1,000,000</span>
+                    <span class="block text-[10px] text-gray-500 mt-1 uppercase italic">NOVA Tokens</span>
+                </div>
+                <div class="locked-card p-6 rounded-2xl border-green-500/20">
+                    <span class="block text-green-400 text-[10px] uppercase tracking-widest mb-2 font-mono">Durum</span>
+                    <span class="text-2xl font-bold text-green-400">Locked</span>
+                    <span class="block text-[10px] text-gray-500 mt-1 uppercase italic">On-Chain Seal</span>
+                </div>
+                <div class="locked-card p-6 rounded-2xl">
+                    <span class="block text-purple-400 text-[10px] uppercase tracking-widest mb-2 font-mono">Kilit Süresi</span>
+                    <span class="text-2xl font-bold">180 Gün</span>
+                    <span class="block text-[10px] text-gray-500 mt-1 uppercase italic">Vesting Period</span>
+                </div>
+            </div>
+            <p class="mt-8 text-[10px] text-gray-500 uppercase tracking-widest">
+                "Bu miktar, global borsa listelemeleri ve pazarlama operasyonları için mühürlenmiştir."
+            </p>
         </div>
     </section>
 
@@ -78,26 +97,13 @@
             <p class="font-bold tracking-widest uppercase">Ryoshi</p>
             <p class="text-xs text-purple-400 font-mono mt-1 opacity-60">Founding Visionary</p>
         </div>
-        <p class="text-[10px] text-gray-600 font-mono tracking-[0.3em] uppercase">© 2026 Nova Core Protocol | No Rights Reserved. Power to the People.</p>
-   <section style="padding: 50px 20px; background: rgba(0, 0, 0, 0.5); color: white; text-align: center; border-top: 1px solid #8b5cf6;">
-    <h2 style="color: #8b5cf6; font-family: sans-serif;">🔒 Güven ve Şeffaflık</h2>
-    <p style="max-width: 800px; margin: 0 auto; font-family: sans-serif; line-height: 1.6;">
-        Nova Core, topluluk için doğdu. Arzın <b>%95.2</b>'si likidite ve topluluk için ayrılmışken, 
-        sadece <b>%4.8</b>'i (1.000.000 NOVA) projenin gelecekteki borsa listelemeleri ve gelişimi için 
-        akıllı kontrat üzerinde <b>6 ay boyunca mühürlenmiştir.</b>
-    </p>
-    <div style="margin-top: 20px;">
-        <span style="border: 1px solid #8b5cf6; padding: 10px 20px; display: inline-block; border-radius: 5px;">
-            <b>Kilit Durumu:</b> 180 Gün (Aktif)
-        </span>
-    </div>
-</section>
+        <p class="text-[10px] text-gray-600 font-mono tracking-[0.3em] uppercase">© 2026 Nova Core Protocol | Power to the People.</p>
     </footer>
 
-    <script>       
+    <script>
         VANTA.NET({
             el: "#vanta-canvas",
-            mouseControls: false, // Fare tepkisi kapalı
+            mouseControls: false,
             touchControls: false,
             gyroControls: false,
             minHeight: 200.00,
@@ -106,11 +112,11 @@
             scaleMobile: 1.00,
             color: 0x8b5cf6,
             backgroundColor: 0x07070a,
-            points: 5.00, // Az nokta, az yorgunluk
+            points: 5.00,
             maxDistance: 24.00,
             spacing: 18.00,
             showDots: false,
-            speed: 0.2 // Çok yavaş ve huzurlu bir akış
+            speed: 0.2
         })
     </script>
 </body>
