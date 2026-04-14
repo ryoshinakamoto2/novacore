@@ -1,112 +1,77 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nova Core Protocol | M. Scolfield</title>
+    <title>Nova Core | The Ryoshi Vision</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body { background: #0f172a; color: white; font-family: 'Inter', sans-serif; }
-        .glass { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        body { background: #0f172a; color: white; font-family: 'Inter', sans-serif; overflow-x: hidden; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
         .gradient-text { background: linear-gradient(90deg, #a855f7, #ec4899); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .roadmap-card { border-left: 3px solid #a855f7; padding-left: 20px; margin-bottom: 20px; }
+        .roadmap-card { border-left: 2px solid #a855f7; padding-left: 20px; margin-bottom: 25px; }
     </style>
 </head>
 <body class="p-6">
-<div id="vanta-canvas" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;"></div>
-    <nav class="flex justify-between items-center mb-12 max-w-5xl mx-auto">
-        <h1 class="text-3xl font-bold tracking-tighter gradient-text">NOVA CORE</h1>
-        <div class="space-x-4 text-xs md:text-sm">
-            <span class="text-gray-400">Status: <span class="text-green-400">● Mainnet Ready</span></span>
+    <div id="vanta-canvas" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;"></div>
+
+    <nav class="flex justify-between items-center mb-16 max-w-5xl mx-auto">
+        <h1 class="text-3xl font-black tracking-tighter gradient-text">NOVA CORE</h1>
+        <div class="space-x-4 text-xs">
+            <span class="text-gray-400">Network: <span class="text-purple-400 font-mono">SOLANA</span></span>
         </div>
     </nav>
 
-    <header class="text-center mb-20 max-w-3xl mx-auto">
-        <h2 class="text-5xl font-extrabold mb-6 leading-tight text-white">Solana Hızında, <span class="gradient-text">Nova Core</span> Güvencesinde.</h2>
-        <p class="text-gray-400 text-lg mb-8">Geleceğin blokzincir protokolü. M. Scolfield liderliğinde, güvenlik ve hız odaklı yeni nesil ekosistem.</p>
+    <header class="text-center mb-24 max-w-4xl mx-auto">
+        <h2 class="text-6xl font-black mb-6 leading-tight text-white tracking-tight">The Digital Gold of <span class="gradient-text">Solana</span></h2>
+        <p class="text-gray-400 text-xl mb-10 font-light">No owners, no taxes, 21 million supply. A protocol built by Ryoshi for the people.</p>
+        <div class="inline-block glass px-6 py-2 rounded-full text-sm font-mono text-purple-300">Total Supply: 21,000,000 NOVA</div>
     </header>
 
-    <section class="max-w-5xl mx-auto mb-20">
-        <h3 class="text-2xl font-bold mb-8 text-center underline decoration-purple-500">Protokol Güvenlik Katmanları</h3>
-        <div class="grid md:grid-cols-3 gap-6">
-            <div class="glass p-6 rounded-2xl text-center">
-                <div class="text-3xl mb-4">🐋</div>
-                <h4 class="font-bold text-purple-400 mb-2">Balina Koruması</h4>
-                <p class="text-sm text-gray-400">Tek seferde maksimum %1 işlem limiti ile fiyat manipülasyonu imkansızdır.</p>
+    <section class="max-w-5xl mx-auto mb-24">
+        <h3 class="text-2xl font-bold mb-12 text-center">Protocol Fundamentals</h3>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="glass p-8 rounded-3xl text-center">
+                <div class="text-4xl mb-6">🔒</div>
+                <h4 class="font-bold text-white mb-3 text-lg">Fixed Supply</h4>
+                <p class="text-sm text-gray-400 leading-relaxed">Total supply is hard-capped at 21,000,000. Scarcity is programmed into our DNA.</p>
             </div>
-            <div class="glass p-6 rounded-2xl text-center">
-                <div class="text-3xl mb-4">💎</div>
-                <h4 class="font-bold text-purple-400 mb-2">%1 İşlem Vergisi</h4>
-                <p class="text-sm text-gray-400">Her transferde %1 vergi kesilerek kurucu cüzdana ve ekosisteme aktarılır.</p>
+            <div class="glass p-8 rounded-3xl text-center">
+                <div class="text-4xl mb-6">⚖️</div>
+                <h4 class="font-bold text-white mb-3 text-lg">0% Tax Policy</h4>
+                <p class="text-sm text-gray-400 leading-relaxed">Pure decentralization. No hidden fees. What you buy is exactly what you get.</p>
             </div>
-            <div class="glass p-6 rounded-2xl text-center">
-                <div class="text-3xl mb-4">🔥</div>
-                <h4 class="font-bold text-purple-400 mb-2">Akıllı Yakım</h4>
-                <p class="text-sm text-gray-400">Manuel yakım mekanizması ile toplam arz kontrol altında tutulur.</p>
+            <div class="glass p-8 rounded-3xl text-center">
+                <div class="text-4xl mb-6">🛡️</div>
+                <h4 class="font-bold text-white mb-3 text-lg">Renounced</h4>
+                <p class="text-sm text-gray-400 leading-relaxed">No developer control. Immutable code. Ownership left to the community.</p>
             </div>
         </div>
     </section>
 
-    <section class="max-w-4xl mx-auto mb-20 p-8 glass rounded-3xl">
-        <h3 class="text-2xl font-bold mb-10 text-center">2026 Yol Haritası</h3>
-        <div class="roadmap-card">
-            <h4 class="font-bold text-purple-300">Q2 2026: Genesis</h4>
-            <p class="text-sm text-gray-400">Nova Core Ultra Smart Contract yayına alınması ve Likidite kilitleme.</p>
-        </div>
-        <div class="roadmap-card">
-            <h4 class="font-bold text-purple-300">Q3 2026: Expansion</h4>
-            <p class="text-sm text-gray-400">PancakeSwap listelemesi ve küresel pazarlama kampanyaları.</p>
-        </div>
-        <div class="roadmap-card">
-            <h4 class="font-bold text-purple-300">Q4 2026: Ecosystem Expansion</h4>
-            <p class="text-sm text-gray-400">NovaSwap entegrasyonu, Stake paneli ve topluluk oylama sisteminin (DAO) hayata geçirilmesi.</p>
-        </div>
-    </section>
-
-    <section class="max-w-5xl mx-auto mb-20 text-center">
-        <h3 class="text-2xl font-bold mb-8">Kurucu & Baş Geliştirici</h3>
-        <div class="flex justify-center">
+    <section class="max-w-3xl mx-auto mb-24 glass p-10 rounded-[40px] border-purple-500/20">
+        <h3 class="text-3xl font-bold mb-8 gradient-text">The Ryoshi Manifesto</h3>
+        <p class="text-gray-300 text-lg italic leading-relaxed font-light">
+            "Nova Core is not a business; it is a digital legacy. In a world of complex taxes and centralized control, we choose simplicity and freedom. What was started by Ryoshi now belongs to everyone. No owners, no taxes, just pure decentralization."
+        </p>
+        <div class="mt-8 pt-6 border-t border-white/10 flex items-center">
+            <div class="w-12 h-12 bg-gradient-to-tr from-purple-500 to-pink-500 rounded-full flex items-center justify-center text-xl shadow-lg mr-4">👤</div>
             <div>
-                <div class="w-24 h-24 bg-gradient-to-tr from-purple-500 to-pink-500 rounded-full mx-auto mb-4 border-4 border-gray-800 shadow-lg flex items-center justify-center text-3xl">👤</div>
-                <h4 class="font-bold">M. Scolfield</h4>
-                <p class="text-purple-400 text-sm italic">Lead Developer & Founder</p>
+                <p class="font-bold text-white">- Ryoshi</p>
+                <p class="text-xs text-purple-400 font-mono">Founding Visionary</p>
             </div>
         </div>
     </section>
 
-    <footer class="text-center text-gray-500 border-t border-gray-800 pt-10 pb-10">
-        <p>© 2026 Nova Core Protocol. Tüm Hakları Saklıdır.</p>
-        <p class="text-[10px] mt-2 opacity-50 font-mono">SC: NovaCoreUltra.sol | 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4</p>
+    <footer class="text-center text-gray-600 border-t border-white/5 pt-12 pb-12">
+        <p class="text-sm uppercase tracking-widest">© 2026 Nova Core Protocol</p>
+        <p class="text-[10px] mt-4 opacity-40 font-mono tracking-widest">NOVA_SUPPLY_CAP: 21,000,000 | NETWORK_STATUS: STABLE</p>
     </footer>
 
-</body>
-</html>
-<section id="contact-section" style="padding: 100px 20px; text-align: center; background: #0b0b14;">
-    <div style="background: linear-gradient(145deg, #151525, #0f0f1b); padding: 50px; border-radius: 30px; max-width: 500px; margin: 0 auto; border: 1px solid rgba(168, 85, 247, 0.3); box-shadow: 0 10px 40px rgba(0,0,0,0.5);">
-        
-        <div style="font-size: 3rem; margin-bottom: 20px;">✉️</div>
-        <h2 style="color: #fff; font-family: sans-serif; margin-bottom: 15px;">Bizimle Bağlantı Kurun</h2>
-        <p style="color: #94a3b8; margin-bottom: 35px; line-height: 1.6;">
-            Nova Core ekosistemi hakkında sorularınız veya iş birliği talepleriniz için kurucu ekibimize ulaşın.
-        </p>
-
-        <a href="mailto:emrekali1994@gmail.com" class="contact-btn" style="display: inline-block; background: #a855f7; color: #fff; text-decoration: none; padding: 18px 40px; border-radius: 50px; font-weight: bold; font-size: 1.1rem; box-shadow: 0 5px 20px rgba(168, 85, 247, 0.4); transition: all 0.3s ease;">
-            İletişime Geç
-        </a>
-    </div>
-</section>
-
-<style>
-    .contact-btn:hover {
-        transform: translateY(-3px) scale(1.05);
-        box-shadow: 0 8px 25px rgba(168, 85, 247, 0.6);
-        background: #b567f8;
-    }
-</style>
-<script>       
-VANTA.NET({
+    <script>       
+        VANTA.NET({
             el: "#vanta-canvas",
             mouseControls: true,
             touchControls: true,
@@ -117,10 +82,10 @@ VANTA.NET({
             scaleMobile: 1.00,
             color: 0xa855f7,
             backgroundColor: 0x07070a,
-            points: 12.00,
-            maxDistance: 20.00,
-            spacing: 15.00
+            points: 10.00,
+            maxDistance: 25.00,
+            spacing: 17.00
         })
     </script>
 </body>
-</html>
+</html>v
