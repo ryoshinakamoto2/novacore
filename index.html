@@ -70,22 +70,25 @@
         <p class="text-[10px] mt-4 opacity-40 font-mono tracking-widest">NOVA_SUPPLY_CAP: 21,000,000 | NETWORK_STATUS: STABLE</p>
     </footer>
 
-   <script>       
+<script>       
     VANTA.NET({
         el: "#vanta-canvas",
-        mouseControls: false, // Fareyle dönmeyi tamamen kapattık
-        touchControls: false, // Dokunmatik tepkiyi kapattık
-        gyroControls: false,
+        mouseControls: false, // Fare tepkisini kapattık
+        touchControls: false, // Dokunma tepkisini kapattık
+        gyroControls: false,  // Hareket sensörünü kapattık
         minHeight: 200.00,
         minWidth: 200.00,
         scale: 1.00,
         scaleMobile: 1.00,
-        color: 0x6366f1, 
+        color: 0x6366f1,
         backgroundColor: 0x07070a,
-        points: 6.00, // Nokta sayısını minimuma indirdik
+        points: 6.00,
         maxDistance: 20.00,
         spacing: 20.00,
-        showDots: false
+        showDots: false,
+        // İŞTE KRİTİK AYARLAR:
+        speed: 0.1,         // Otomatik dönme hızını neredeyse sıfıra indirdik
+        points: 5.00        // Yoğunluğu azalttık ki göz yormasın
     })
 </script>
 </body>
