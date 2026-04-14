@@ -71,21 +71,22 @@
     </footer>
 
     <script>       
-        VANTA.NET({
-            el: "#vanta-canvas",
-            mouseControls: true,
-            touchControls: true,
-            gyroControls: false,
-            minHeight: 200.00,
-            minWidth: 200.00,
-            scale: 1.00,
-            scaleMobile: 1.00,
-            color: 0xa855f7,
-            backgroundColor: 0x07070a,
-            points: 10.00,
-            maxDistance: 25.00,
-            spacing: 17.00
-        })
-    </script>
+    VANTA.NET({
+        el: "#vanta-canvas",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        color: 0x6366f1, // Daha yumuşak bir indigo/mor tonu
+        backgroundColor: 0x0f172a, // Koyu, dinlendirici lacivert
+        points: 8.00, // Nokta sayısını azalttık (Gözü yormaz)
+        maxDistance: 22.00, // Çizgiler daha seyrek
+        spacing: 18.00, // Aralar daha açık
+        showDots: false // Sadece çizgiler kalsın, daha temiz durur
+    })
+</script>
 </body>
 </html>v
