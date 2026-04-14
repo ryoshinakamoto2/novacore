@@ -3,93 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nova Core | The Ryoshi Vision</title>
+    <title>Nova Core | The Ryoshi Standard</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body { background: #0f172a; color: white; font-family: 'Inter', sans-serif; overflow-x: hidden; }
-        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        body { background: #07070a; color: white; font-family: 'Inter', sans-serif; overflow-x: hidden; }
+        .glass { background: rgba(255, 255, 255, 0.02); backdrop-filter: blur(15px); border: 1px solid rgba(255, 255, 255, 0.05); }
         .gradient-text { background: linear-gradient(90deg, #a855f7, #ec4899); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .roadmap-card { border-left: 2px solid #a855f7; padding-left: 20px; margin-bottom: 25px; }
+        .manifesto-card { border-left: 1px solid rgba(168, 85, 247, 0.3); padding-left: 24px; transition: all 0.3s ease; }
+        .manifesto-card:hover { border-left: 3px solid #a855f7; background: rgba(168, 85, 247, 0.02); }
     </style>
 </head>
-<body class="p-6">
+<body class="p-4 md:p-8">
     <div id="vanta-canvas" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;"></div>
 
-    <nav class="flex justify-between items-center mb-16 max-w-5xl mx-auto">
-        <h1 class="text-3xl font-black tracking-tighter gradient-text">NOVA CORE</h1>
-        <div class="space-x-4 text-xs">
-            <span class="text-gray-400">Network: <span class="text-purple-400 font-mono">SOLANA</span></span>
+    <nav class="flex justify-between items-center mb-20 max-w-6xl mx-auto">
+        <h1 class="text-2xl font-black tracking-tighter gradient-text uppercase">Nova Core</h1>
+        <div class="px-4 py-1 rounded-full border border-green-500/30 bg-green-500/5">
+            <span class="text-[10px] text-green-400 font-mono uppercase tracking-widest">● Decentralized System Ready</span>
         </div>
     </nav>
 
-    <header class="text-center mb-24 max-w-4xl mx-auto">
-        <h2 class="text-6xl font-black mb-6 leading-tight text-white tracking-tight">The Digital Gold of <span class="gradient-text">Solana</span></h2>
-        <p class="text-gray-400 text-xl mb-10 font-light">No owners, no taxes, 21 million supply. A protocol built by Ryoshi for the people.</p>
-        <div class="inline-block glass px-6 py-2 rounded-full text-sm font-mono text-purple-300">Total Supply: 21,000,000 NOVA</div>
+    <header class="text-center mb-32 max-w-4xl mx-auto">
+        <h2 class="text-5xl md:text-7xl font-black mb-8 leading-tight tracking-tight">The Digital Gold <br><span class="gradient-text">Standard on Solana</span></h2>
+        <p class="text-gray-400 text-lg md:text-xl mb-12 font-light leading-relaxed">
+            Nova Core is not a company. It is an immutable protocol. <br class="hidden md:block">
+            Launched by Ryoshi, owned by the community.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+            <div class="glass px-8 py-3 rounded-2xl font-mono text-purple-300 border-purple-500/20">Supply: 21,000,000</div>
+            <div class="glass px-8 py-3 rounded-2xl font-mono text-purple-300 border-purple-500/20">Tax: 0%</div>
+        </div>
     </header>
 
-    <section class="max-w-5xl mx-auto mb-24">
-        <h3 class="text-2xl font-bold mb-12 text-center">Protocol Fundamentals</h3>
-        <div class="grid md:grid-cols-3 gap-8">
-            <div class="glass p-8 rounded-3xl text-center">
-                <div class="text-4xl mb-6">🔒</div>
-                <h4 class="font-bold text-white mb-3 text-lg">Fixed Supply</h4>
-                <p class="text-sm text-gray-400 leading-relaxed">Total supply is hard-capped at 21,000,000. Scarcity is programmed into our DNA.</p>
-            </div>
-            <div class="glass p-8 rounded-3xl text-center">
-                <div class="text-4xl mb-6">⚖️</div>
-                <h4 class="font-bold text-white mb-3 text-lg">0% Tax Policy</h4>
-                <p class="text-sm text-gray-400 leading-relaxed">Pure decentralization. No hidden fees. What you buy is exactly what you get.</p>
-            </div>
-            <div class="glass p-8 rounded-3xl text-center">
-                <div class="text-4xl mb-6">🛡️</div>
-                <h4 class="font-bold text-white mb-3 text-lg">Renounced</h4>
-                <p class="text-sm text-gray-400 leading-relaxed">No developer control. Immutable code. Ownership left to the community.</p>
+    <section class="max-w-5xl mx-auto mb-32">
+        <div class="glass p-8 md:p-16 rounded-[50px] border-white/5 relative overflow-hidden">
+            <div class="absolute top-0 right-0 p-10 opacity-5 text-8xl font-black tracking-tighter">RYOSHI</div>
+            
+            <h3 class="text-4xl font-bold mb-12 gradient-text">The Nova Core Manifesto</h3>
+            
+            <div class="space-y-12 text-gray-300">
+                <div class="manifesto-card">
+                    <h4 class="text-white font-bold text-xl mb-3">1. Mathematics is the Only Truth</h4>
+                    <p class="leading-relaxed font-light">While banks print infinite paper, we print finite code. Our supply is hard-capped at 21,000,000 NOVA. No more can ever be created. Scarcity is our core foundation.</p>
+                </div>
+
+                <div class="manifesto-card">
+                    <h4 class="text-white font-bold text-xl mb-3">2. Safer than a Bank</h4>
+                    <p class="leading-relaxed font-light">Banks control your life. We give you back the keys. Ownership is renounced. The contract is immutable. Your assets cannot be frozen, seized, or manipulated. What you hold is truly yours.</p>
+                </div>
+
+                <div class="manifesto-card">
+                    <h4 class="text-white font-bold text-xl mb-3">3. No Owners, No Taxes</h4>
+                    <p class="leading-relaxed font-light">We believe in pure decentralization. 0% Buy Tax. 0% Sell Tax. No developer fees hidden in the shadows. A system for the people should not tax the people.</p>
+                </div>
+
+                <div class="manifesto-card">
+                    <h4 class="text-white font-bold text-xl mb-3">4. Bitcoin’s Spirit, Solana’s Speed</h4>
+                    <p class="leading-relaxed font-light">Bitcoin is the anchor; Nova Core is the sail. We take the 21M supply philosophy and power it with Solana’s lightning-fast network. Instant global payments with zero friction.</p>
+                </div>
+
+                <div class="manifesto-card">
+                    <h4 class="text-white font-bold text-xl mb-3">5. The Final Act</h4>
+                    <p class="leading-relaxed font-light">Ryoshi plants the seed and disappears. We created the tool, but the community builds the future. No central leader, no central failure.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="max-w-3xl mx-auto mb-24 glass p-10 rounded-[40px] border-purple-500/20">
-        <h3 class="text-3xl font-bold mb-8 gradient-text">The Ryoshi Manifesto</h3>
-        <p class="text-gray-300 text-lg italic leading-relaxed font-light">
-            "Nova Core is not a business; it is a digital legacy. In a world of complex taxes and centralized control, we choose simplicity and freedom. What was started by Ryoshi now belongs to everyone. No owners, no taxes, just pure decentralization."
-        </p>
-        <div class="mt-8 pt-6 border-t border-white/10 flex items-center">
-            <div class="w-12 h-12 bg-gradient-to-tr from-purple-500 to-pink-500 rounded-full flex items-center justify-center text-xl shadow-lg mr-4">👤</div>
-            <div>
-                <p class="font-bold text-white">- Ryoshi</p>
-                <p class="text-xs text-purple-400 font-mono">Founding Visionary</p>
-            </div>
+    <footer class="text-center py-20 border-t border-white/5">
+        <div class="mb-8">
+            <div class="w-16 h-16 bg-gradient-to-tr from-purple-600 to-pink-600 rounded-full flex items-center justify-center text-2xl mx-auto mb-4 shadow-2xl">👤</div>
+            <p class="font-bold tracking-widest uppercase">Ryoshi</p>
+            <p class="text-xs text-purple-400 font-mono mt-1 opacity-60">Founding Visionary</p>
         </div>
-    </section>
-
-    <footer class="text-center text-gray-600 border-t border-white/5 pt-12 pb-12">
-        <p class="text-sm uppercase tracking-widest">© 2026 Nova Core Protocol</p>
-        <p class="text-[10px] mt-4 opacity-40 font-mono tracking-widest">NOVA_SUPPLY_CAP: 21,000,000 | NETWORK_STATUS: STABLE</p>
+        <p class="text-[10px] text-gray-600 font-mono tracking-[0.3em] uppercase">© 2026 Nova Core Protocol | No Rights Reserved. Power to the People.</p>
     </footer>
 
-<script>       
-    VANTA.NET({
-        el: "#vanta-canvas",
-        mouseControls: false, // Fare tepkisini kapattık
-        touchControls: false, // Dokunma tepkisini kapattık
-        gyroControls: false,  // Hareket sensörünü kapattık
-        minHeight: 200.00,
-        minWidth: 200.00,
-        scale: 1.00,
-        scaleMobile: 1.00,
-        color: 0x6366f1,
-        backgroundColor: 0x07070a,
-        points: 6.00,
-        maxDistance: 20.00,
-        spacing: 20.00,
-        showDots: false,
-        // İŞTE KRİTİK AYARLAR:
-        speed: 0.1,         // Otomatik dönme hızını neredeyse sıfıra indirdik
-        points: 5.00        // Yoğunluğu azalttık ki göz yormasın
-    })
-</script>
+    <script>       
+        VANTA.NET({
+            el: "#vanta-canvas",
+            mouseControls: false, // Fare tepkisi kapalı
+            touchControls: false,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x8b5cf6,
+            backgroundColor: 0x07070a,
+            points: 5.00, // Az nokta, az yorgunluk
+            maxDistance: 24.00,
+            spacing: 18.00,
+            showDots: false,
+            speed: 0.2 // Çok yavaş ve huzurlu bir akış
+        })
+    </script>
 </body>
-</html>v
+</html>
